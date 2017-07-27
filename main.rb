@@ -1,7 +1,7 @@
 my_mail = "ваш емейл@gmail.com"  #type here your email
 
 puts "Введите пароль от вашей почты "
-my_password = STDIN.gets.chomp #you`ll type here your password
+my_password = STDIN.noecho(&:gets).chomp #you`ll type here your password
 
 puts "Кому отправить письмо ? "
 send_to = STDIN.gets.chomp
